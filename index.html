@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Melody- Караоке Бар в Москве</title>
+    <!--Подключение гугл фонтс-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--Подключение иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--Подключение файла со стилями-->
+    <link rel="stylesheet" href="style.css">
+    <!--Иконка сайта-->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎤</text></svg>">
+</head>
+<body>
+    <!-- Шапка с видео и меню -->
+    <header class="header">
+        <!-- Видео фон -->
+        <div class="video-container">
+            <video autoplay muted loop id="bg-video">
+                <source src="video.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <!-- Навигация -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-container">
+                    <!-- Логотип -->
+                    <div class="logo">
+                        <a href="#">
+                            <i class="fas fa-microphone-alt"></i>
+                            <span>Melody Night</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Десктопное меню -->
+                    <div class="desktop-menu">
+                        <ul class="menu-list">
+                            <li><a href="#about">О заведении</a></li>
+                            <li><a href="#scheme">График и залы</a></li>
+                            <li><a href="#booking">Бронирование</a></li>
+                            <li><a href="#team">Сотрудники</a></li>
+                            <li><a href="#songs">Список песен</a></li>
+                            <!--Пункт с выпадающим подменю-->
+                            <li class="has-dropdown">
+                                <a href="#menu">Меню <i class="fas fa-chevron-down"></i></a>
+                                <!--Выпадающий список-->
+                                <ul class="dropdown-menu">
+                                    <li><a href="#menu" data-tab="drinks">Напитки</a></li>
+                                    <li><a href="#menu" data-tab="snacks">Закуски</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#events">Мероприятия</a></li>
+                            <li><a href="#reviews">Отзывы</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Кнопка для мобильного меню -->
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Мобильное меню -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo">
+                    <i class="fas fa-microphone-alt"></i>
+                    <span>Melody Night</span>
+                </div>
+                <div class="mobile-menu-close"><i class="fas fa-times"></i></div>
+            </div>
+            <ul class="mobile-menu-list">
+                <li><a href="#about">О заведении</a></li>
+                <li><a href="#scheme">График и залы</a></li>
+                <li><a href="#booking">Бронирование</a></li>
+                <li><a href="#team">Сотрудники</a></li>
+                <li><a href="#songs">Список песен</a></li>
+                <li class="mobile-dropdown">
+                    <a href="#menu">Меню <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#menu" data-tab="drinks">Напитки</a></li>
+                        <li><a href="#menu" data-tab="snacks">Закуски</a></li>
+                    </ul>
+                </li>
+                <li><a href="#events">Мероприятия</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+        
+        <!-- Заголовок -->
+        <div class="header-content">
+            <div class="container">
+                <h1>Караоке-бар <span class="highlight">Night Melody</span></h1>
+                <p class="subtitle">Лучшее место для пения и отдыха в Москве</p>
+                <p class="description">Более 50 000 песен, профессиональное оборудование, уютная атмосфера и вкусные коктейли</p>
+                <div class="header-buttons">
+                    <a href="#booking" class="btn btn-primary">Забронировать столик</a>
+                    <a href="#songs" class="btn btn-secondary">Посмотреть песни</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Раздел "О заведении" -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">О нашем караоке-баре</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p><strong>Night Melody</strong> — это уникальное место, где каждый может почувствовать себя звездой сцены. Мы открылись в 2015 году и с тех пор стали любимым местом для поклонников караоке в Москве.</p>
+                        
+                        <div class="features">
+                            <div class="feature">
+                                <i class="fas fa-music"></i>
+                                <h3>Более 50 000 песен</h3>
+                                <p>Русские и зарубежные хиты разных эпох и жанров</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-microphone"></i>
+                                <h3>Профессиональное оборудование</h3>
+                                <p>Система звука JBL, микрофоны Shure, световые эффекты</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-cocktail"></i>
+                                <h3>Авторские коктейли</h3>
+                                <p>Уникальная барная карта от нашего топ-бармена</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <h3>Залы для компаний</h3>
+                                <p>От уютных кабинок до просторного VIP-зала на 50 человек</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="bar-photo.jpg" alt="Фото караоке-бара Night Melody" class="about-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел "График и схема залов" -->
+        <section class="scheme" id="scheme">
+    <div class="container">
+        <h2 class="section-title">График работы и наши залы</h2>
+       
+        <div class="schedule">
+            <h3><i class="far fa-clock"></i> График работы</h3>
+            <div class="schedule-grid">
+                <div class="schedule-day">
+                    <span>Понедельник - Четверг</span>
+                    <span>18:00 - 02:00</span>
+                </div>
+                <div class="schedule-day">
+                    <span>Пятница</span>
+                    <span>18:00 - 06:00</span>
+                </div>
+                <div class="schedule-day">
+                    <span>Суббота</span>
+                    <span>16:00 - 06:00</span>
+                </div>
+                <div class="schedule-day">
+                    <span>Воскресенье</span>
+                    <span>16:00 - 02:00</span>
+                </div>
+            </div>
+            <p class="note">* В праздничные дни график может меняться</p>
+        </div>
+       
+        <div class="halls">
+            <h3><i class="fas fa-door-open"></i> Наши залы</h3>
+            <div class="halls-slider">
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <!-- VIP Зал -->
+                        <div class="hall-card">
+                            <div class="hall-image">
+                                <img src="room_3.jpg"
+                                     alt="VIP зал караоке-бара с просторной сценой и барной стойкой"
+                                     class="hall-photo">
+                                <div class="hall-label">VIP</div>
+                            </div>
+                            <div class="hall-info">
+                                <h4>VIP зал</h4>
+                                <p>Просторный зал с собственной сценой, барной стойкой и зоной отдыха. Идеально подходит для крупных мероприятий и корпоративов.</p>
+                                <div class="hall-features">
+                                    <span><i class="fas fa-user-friends"></i> до 50 чел.</span>
+                                    <span><i class="fas fa-tv"></i> 2 экрана</span>
+                                    <span><i class="fas fa-couch"></i> диваны</span>
+                                    <span><i class="fas fa-wifi"></i> Wi-Fi</span>
+                                </div>
+                                <div class="hall-price">
+                                    <span>от 5000 ₽/час</span>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <!-- Средний зал -->
+                        <div class="hall-card">
+                            <div class="hall-image">
+                                <img src="room_2.jpg"
+                                     alt="Средний зал караоке-бара с уютной атмосферой"
+                                     class="hall-photo">
+                                <div class="hall-label">Средний</div>
+                            </div>
+                            <div class="hall-info">
+                                <h4>Средний зал</h4>
+                                <p>Уютный зал для компаний от 10 до 25 человек. Идеален для дней рождений, корпоративов и дружеских посиделок.</p>
+                                <div class="hall-features">
+                                    <span><i class="fas fa-user-friends"></i> 10-25 чел.</span>
+                                    <span><i class="fas fa-tv"></i> 1 экран</span>
+                                    <span><i class="fas fa-wine-glass-alt"></i> мини-бар</span>
+                                    <span><i class="fas fa-guitar"></i> 2 микрофона</span>
+                                </div>
+                                <div class="hall-price">
+                                    <span>от 3000 ₽/час</span>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <!-- Малый зал -->
+                        <div class="hall-card">
+                            <div class="hall-image">
+                                <img src="room_1.jpg"
+                                     alt="Малый зал караоке-бара для небольших компаний"
+                                     class="hall-photo">
+                                <div class="hall-label">Малый</div>
+                            </div>
+                            <div class="hall-info">
+                                <h4>Малый зал</h4>
+                                <p>Камерный зал для небольших компаний от 2 до 8 человек. Уютная атмосфера для душевных посиделок и романтических свиданий.</p>
+                                <div class="hall-features">
+                                    <span><i class="fas fa-user-friends"></i> 2-8 чел.</span>
+                                    <span><i class="fas fa-music"></i> акустика</span>
+                                    <span><i class="fas fa-coffee"></i> столы</span>
+                                    <span><i class="fas fa-microphone"></i> 2 микрофона</span>
+                                </div>
+                                <div class="hall-price">
+                                    <span>от 1500 ₽/час</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-prev" aria-label="Предыдущий зал"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-next" aria-label="Следующий зал"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Раздел "Бронирование" -->
+        <section class="booking" id="booking">
+            <div class="container">
+                <h2 class="section-title">Бронирование столика</h2>
+                <p class="section-subtitle">Забронируйте столик онлайн и получите скидку 10% на первый заказ!</p>
+                
+                <div class="booking-container">
+                    <div class="booking-form-container">
+                        <form id="booking-form" class="booking-form">
+                            <div class="form-group">
+                                <label for="name"><i class="fas fa-user"></i> Ваше имя *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone"></i> Телефон *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date"><i class="far fa-calendar-alt"></i> Дата *</label>
+                                    <input type="date" id="date" name="date" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="time"><i class="far fa-clock"></i> Время *</label>
+                                    <select id="time" name="time" required>
+                                        <option value="">Выберите время</option>
+                                        <option value="18:00">18:00</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="20:00">20:00</option>
+                                        <option value="21:00">21:00</option>
+                                        <option value="22:00">22:00</option>
+                                        <option value="23:00">23:00</option>
+                                        <option value="00:00">00:00</option>
+                                        <option value="01:00">01:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="hall"><i class="fas fa-door-open"></i> Зал</label>
+                                <select id="hall" name="hall">
+                                    <option value="any">Любой доступный</option>
+                                    <option value="vip">VIP зал</option>
+                                    <option value="medium">Средний зал</option>
+                                    <option value="small">Малый зал</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="guests"><i class="fas fa-user-friends"></i> Количество гостей *</label>
+                                <input type="number" id="guests" name="guests" min="1" max="50" value="2" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="comment"><i class="far fa-comment"></i> Дополнительные пожелания</label>
+                                <textarea id="comment" name="comment" rows="3"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Забронировать</button>
+                        </form>
+                        
+                        <div id="form-message" class="form-message"></div>
+                    </div>
+                    
+                    <div class="booking-info">
+                        <h3><i class="fas fa-info-circle"></i> Информация о бронировании</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Подтверждение брони в течение 30 минут</li>
+                            <li><i class="fas fa-check-circle"></i> Бесплатная отмена за 24 часа</li>
+                            <li><i class="fas fa-check-circle"></i> Депозит 2000 руб. при бронировании VIP-зала</li>
+                            <li><i class="fas fa-check-circle"></i> Подарок имениннику при бронировании от 10 человек</li>
+                            <li><i class="fas fa-check-circle"></i> Детям до 18 лет только до 22:00 в сопровождении взрослых</li>
+                        </ul>
+                        
+                        <div class="contact-info">
+                            <h4><i class="fas fa-headset"></i> Есть вопросы?</h4>
+                            <p>Звоните нам:</p>
+                            <a href="tel:+74951234567" class="phone">+7 (495) 123-45-67</a>
+                            <p>Ежедневно с 12:00 до 22:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Обновленная секция команды -->
+        <section class="team" id="team">
+            <div class="container">
+                <h2 class="section-title">Наша команда</h2>
+                <p class="section-subtitle">Профессионалы, которые создают атмосферу вашего отдыха</p>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="Ann.jpg" alt="Анна Соколова" class="team-photo">
+                        </div>
+                        <div class="member-info">
+                            <h3>Анна Соколова</h3>
+                            <p class="position">Менеджер</p>
+                            <p>Организует мероприятия и помогает с бронированием. Работает с нами с 2016 года.</p>
+                            <div class="member-contact">
+                                <a href="tel:+79161234567"><i class="fas fa-phone"></i></a>
+                                <a href="mailto:anna@melodynight.ru"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="Max.jpg" alt="Максим Иванов" class="team-photo">
+                        </div>
+                        <div class="member-info">
+                            <h3>Максим Иванов</h3>
+                            <p class="position">Главный бармен</p>
+                            <p>Автор уникальной барной карты. Смешивает коктейли с 2010 года.</p>
+                            <div class="member-contact">
+                                <span class="specialty"><i class="fas fa-award"></i> Лучший бармен 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="Dima.jpg" alt="Дмитрий Петров" class="team-photo">
+                        </div>
+                        <div class="member-info">
+                            <h3>Дмитрий Петров</h3>
+                            <p class="position">DJ и ведущий</p>
+                            <p>Создает атмосферу вечера, помогает с выбором песен и проводит конкурсы.</p>
+                            <div class="member-contact">
+                                <span class="experience"><i class="far fa-star"></i> 8 лет опыта</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="Olga.jpg" alt="Ольга Кузнецова" class="team-photo">
+                        </div>
+                        <div class="member-info">
+                            <h3>Ольга Кузнецова</h3>
+                            <p class="position">Шеф-повар</p>
+                            <p>Готовит вкуснейшие закуски к вашим напиткам. Специализируется на европейской кухне.</p>
+                            <div class="member-contact">
+                                <span class="specialty"><i class="fas fa-utensil-spoon"></i> Авторские закуски</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел "Список песен" -->
+        <section class="songs" id="songs">
+            <div class="container">
+                <h2 class="section-title">Наша коллекция песен</h2>
+                <p class="section-subtitle">Более 50 000 песен на русском и иностранных языках</p>
+                
+                <div class="songs-search">
+                    <input type="text" id="song-search" placeholder="Найти песню по названию или исполнителю...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="songs-filter">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="russian">Русские</button>
+                    <button class="filter-btn" data-filter="foreign">Зарубежные</button>
+                    <button class="filter-btn" data-filter="pop">Поп</button>
+                    <button class="filter-btn" data-filter="rock">Рок</button>
+                    <button class="filter-btn" data-filter="hiphop">Хип-хоп</button>
+                    <button class="filter-btn" data-filter="retro">Ретро</button>
+                    <button class="filter-btn" data-filter="disco">Диско</button>
+                    <button class="filter-btn" data-filter="folk">Народные</button>
+                </div>
+                
+                <div class="songs-container">
+                    <!-- Песни будут загружены через JavaScript -->
+                    <div class="songs-list" id="songs-list">
+                        <!-- Динамически загружаемые песни -->
+                    </div>
+                    
+                    <div class="songs-stats">
+                        <h3><i class="fas fa-chart-bar"></i> Статистика</h3>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-number">50,000+</span>
+                                <span class="stat-label">песен в каталоге</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">1,200+</span>
+                                <span class="stat-label">исполнителей</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">15</span>
+                                <span class="stat-label">языков</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">25</span>
+                                <span class="stat-label">жанров</span>
+                            </div>
+                        </div>
+                        
+                        <div class="top-songs">
+                            <h4><i class="fas fa-crown"></i> Топ-5 песен недели</h4>
+                            <ol>
+                                <li>Аргентина-Ямайка 5:0 - Чайф</li>
+                                <li>Bohemian Rhapsody - Queen</li>
+                                <li>Экспонат - Ленинград</li>
+                                <li>Billie Jean - Michael Jackson</li>
+                                <li>Кукушка - Полина Гагарина</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="song-request-form" id="song-request-form">
+                    <h3>Заказать песню</h3>
+                    <form id="request-form">
+                        <div class="form-group">
+                            <label for="request-song">Название песни *</label>
+                            <input type="text" id="request-song" name="song" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="request-artist">Исполнитель</label>
+                            <input type="text" id="request-artist" name="artist">
+                        </div>
+                        <div class="form-group">
+                            <label for="request-table">Номер столика</label>
+                            <input type="text" id="request-table" name="table">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                        <button type="button" class="btn btn-secondary cancel-request">Отмена</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Обновленное меню -->
+        <section class="menu-section" id="menu">
+            <div class="container">
+                <h2 class="section-title">Наше меню</h2>
+                <p class="section-subtitle">Вкусные коктейли, закуски и напитки</p>
+                
+                <div class="menu-tabs">
+                    <button class="menu-tab active" data-tab="drinks">Напитки</button>
+                    <button class="menu-tab" data-tab="snacks">Закуски</button>
+                </div>
+                
+                <div class="menu-content">
+                    <!-- Напитки -->
+                    <div class="menu-category active" id="drinks-menu">
+                        <h3><i class="fas fa-cocktail"></i> Коктейли</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <div class="item-title-with-image">
+                                        <img src="mohito.jpg" alt="Мохито" class="menu-item-img">
+                                        <h4>Мохито</h4>
+                                    </div>
+                                    <span class="item-price">550 ₽</span>
+                                </div>
+                                <p class="item-desc">Белый ром, лайм, мята, сахарный сироп, содовая</p>
+                                <span class="item-volume">400 мл</span>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <div class="item-title-with-image">
+                                        <img src="lagoon.jpg" alt="Голубая лагуна" class="menu-item-img">
+                                        <h4>Голубая лагуна</h4>
+                                    </div>
+                                    <span class="item-price">600 ₽</span>
+                                </div>
+                                <p class="item-desc">Водка, ликер Blue Curacao, лимонный сок, спрайт</p>
+                                <span class="item-volume">350 мл</span>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <div class="item-title-with-image">
+                                        <img src="margarita.jpg" alt="Маргарита" class="menu-item-img">
+                                        <h4>Маргарита</h4>
+                                    </div>
+                                    <span class="item-price">650 ₽</span>
+                                </div>
+                                <p class="item-desc">Текила, ликер Cointreau, лаймовый сок, соленая окантовка</p>
+                                <span class="item-volume">300 мл</span>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <div class="item-title-with-image">
+                                        <img src="milk.jpg" alt="Молочный коктейль" class="menu-item-img">
+                                        <h4>Молочный коктейль</h4>
+                                    </div>
+                                    <span class="item-price">450 ₽</span>
+                                </div>
+                                <p class="item-desc">Молоко, мороженое, сироп (ваниль/шоколад/клубника)</p>
+                                <span class="item-volume">400 мл</span>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <div class="item-title-with-image">
+                                        <img src="lavender.jpg" alt="Лавандовое наслаждение" class="menu-item-img">
+                                        <h4>Лавандовое наслаждение</h4>
+                                    </div>
+                                    <span class="item-price">700 ₽</span>
+                                </div>
+                                <p class="item-desc">Джин, лавандовый сироп, лимонный сок, яичный белок</p>
+                                <span class="item-volume">250 мл</span>
+                            </div>
+                        </div>
+                        
+                        <h3><i class="fas fa-beer"></i> Другие напитки</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <div class="item-title-with-image">
+                                        <img src="heineken.jpg" alt="Пиво Хайнекен" class="menu-item-img">
+                                        <h4>Пиво Хайнекен</h4>
+                                    </div>
+                                    <span class="item-price">350 ₽</span>
+                                </div>
+                                <p class="item-desc">Светлое лагер, Нидерланды</p>
+                                <span class="item-volume">0.5 л</span>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <div class="item-title-with-image">
+                                        <img src="cola.jpg" alt="Кола" class="menu-item-img">
+                                        <h4>Кола</h4>
+                                    </div>
+                                    <span class="item-price">200 ₽</span>
+                                </div>
+                                <p class="item-desc">Coca-Cola</p>
+                                <span class="item-volume">0.33 л</span>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <div class="item-title-with-image">
+                                        <img src="bonaqua.jpg" alt="Вода BonAqua" class="menu-item-img">
+                                        <h4>Вода BonAqua</h4>
+                                    </div>
+                                    <span class="item-price">150 ₽</span>
+                                </div>
+                                <p class="item-desc">Питьевая вода газированная/негазированная</p>
+                                <span class="item-volume">0.5 л</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Закуски -->
+                    <div class="menu-category" id="snacks-menu">
+                        <h3><i class="fas fa-utensils"></i> Закуски</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <div class="item-title-with-image">
+                                        <img src="shrimp_kanape.jpg" alt="Канапе с креветками" class="menu-item-img">
+                                        <h4>Канапе с креветками</h4>
+                                    </div>
+                                    <span class="item-price">850 ₽</span>
+                                </div>
+                                <p class="item-desc">Креветки тигровые, авокадо, соус манго-чили</p>
+                                <span class="item-weight">6 шт</span>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <div class="item-title-with-image">
+                                        <img src="ham_tart.jpg" alt="Тарталетки с ветчиной" class="menu-item-img">
+                                        <h4>Тарталетки с ветчиной</h4>
+                                    </div>
+                                    <span class="item-price">750 ₽</span>
+                                </div>
+                                <p class="item-desc">Ветчина пармская, сливочный сыр, зелень</p>
+                                <span class="item-weight">8 шт</span>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <div class="item-title-with-image">
+                                        <img src="avocado_shrimp.jpg" alt="Бутерброды с авокадо и креветками" class="menu-item-img">
+                                        <h4>Бутерброды с авокадо и креветками</h4>
+                                    </div>
+                                    <span class="item-price">900 ₽</span>
+                                </div>
+                                <p class="item-desc">Авокадо, креветки, цельнозерновой хлеб, лимон</p>
+                                <span class="item-weight">4 шт</span>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <div class="item-title-with-image">
+                                        <img src="cheese_plate.jpg" alt="Сырная тарелка" class="menu-item-img">
+                                        <h4>Сырная тарелка</h4>
+                                    </div>
+                                    <span class="item-price">1200 ₽</span>
+                                </div>
+                                <p class="item-desc">Ассорти из 5 сортов сыра, орехи, мед, крекеры</p>
+                                <span class="item-weight">400 г</span>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <div class="item-title-with-image">
+                                        <img src="cheesecake.jpg" alt="Чизкейк Нью-Йорк" class="menu-item-img">
+                                        <h4>Чизкейк Нью-Йорк</h4>
+                                    </div>
+                                    <span class="item-price">450 ₽</span>
+                                </div>
+                                <p class="item-desc">Классический чизкейк с ягодным соусом</p>
+                                <span class="item-weight">150 г</span>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <div class="item-title-with-image">
+                                        <img src="fries.jpg" alt="Картофель фри из батата" class="menu-item-img">
+                                        <h4>Картофель фри из батата</h4>
+                                    </div>
+                                    <span class="item-price">550 ₽</span>
+                                </div>
+                                <p class="item-desc">Сладкий картофель с трюфельным соусом</p>
+                                <span class="item-weight">250 г</span>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <div class="item-title-with-image">
+                                        <img src="cream_brule.jpg" alt="Крем-брюле" class="menu-item-img">
+                                        <h4>Крем-брюле</h4>
+                                    </div>
+                                    <span class="item-price">400 ₽</span>
+                                </div>
+                                <p class="item-desc">Ванильный крем с карамельной корочкой</p>
+                                <span class="item-weight">120 г</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел "Мероприятия" -->
+        <section class="events" id="events">
+            <div class="container">
+                <h2 class="section-title">Ближайшие мероприятия</h2>
+                <p class="section-subtitle">Конкурсы, тематические вечера и специальные гости</p>
+                
+                <div class="events-grid">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">22</span>
+                            <span class="month">Декабря</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Вечер 90-х</h3>
+                            <p class="event-time"><i class="far fa-clock"></i> 20:00 - 02:00</p>
+                            <p class="event-desc">Только музыка 90-х годов! Конкурс на лучший наряд в стиле 90-х с призами.</p>
+                            <div class="event-price">Вход: 500 ₽</div>
+                            <a href="#booking" class="btn btn-small">Забронировать</a>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">29</span>
+                            <span class="month">Декабря</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Караоке-баттл</h3>
+                            <p class="event-time"><i class="far fa-clock"></i> 21:00 - 01:00</p>
+                            <p class="event-desc">Соревнование вокалистов с ценными призами от партнеров. Жюри - музыкальные эксперты.</p>
+                            <div class="event-price">Участие: бесплатно</div>
+                            <a href="#booking" class="btn btn-small">Забронировать</a>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">12</span>
+                            <span class="month">Января</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Вечер рок-музыки</h3>
+                            <p class="event-time"><i class="far fa-clock"></i> 20:00 - 03:00</p>
+                            <p class="event-desc">От классического рока до современного. Выступление кавер-группы "Rock Legends".</p>
+                            <div class="event-price">Вход: 700 ₽</div>
+                            <a href="#booking" class="btn btn-small">Забронировать</a>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">19</span>
+                            <span class="month">Января</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Латиноамериканская ночь</h3>
+                            <p class="event-time"><i class="far fa-clock"></i> 21:00 - 04:00</p>
+                            <p class="event-desc">Сальса, бачата, реггетон. Мастер-класс по сальсе от профессиональных танцоров.</p>
+                            <div class="event-price">Вход: 600 ₽</div>
+                            <a href="#booking" class="btn btn-small">Забронировать</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="event-subscribe">
+                    <h3>Хотите узнавать о мероприятиях первыми?</h3>
+                    <form id="subscribe-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn btn-primary">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел "Отзывы" -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы наших гостей</h2>
+                <p class="section-subtitle">Что говорят посетители о Melody Night</p>
+                
+                <div class="reviews-slider">
+                    <div class="slider-container">
+                        <div class="slider-track">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="reviewer">
+                                        <div class="reviewer-avatar">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="reviewer-info">
+                                            <h4>Марина Иванова</h4>
+                                            <div class="review-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-date">15 декабря 2023</div>
+                                </div>
+                                <div class="review-content">
+                                    <p>Отмечали день рождения друзей. Очень понравилась атмосфера, отличный звук, огромный выбор песен. Бармены делают вкуснейшие коктейли. Обязательно вернемся!</p>
+                                </div>
+                            </div>
+                            
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="reviewer">
+                                        <div class="reviewer-avatar">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="reviewer-info">
+                                            <h4>Алексей Петров</h4>
+                                            <div class="review-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-date">2 декабря 2023</div>
+                                </div>
+                                <div class="review-content">
+                                    <p>Были на корпоративе. Отличный зал, вместил всех 30 человек. DJ отлично чувствовал настроение компании, музыкальная подборка была идеальной. Еда вкусная, обслуживание быстрое.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="reviewer">
+                                        <div class="reviewer-avatar">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="reviewer-info">
+                                            <h4>Ольга Смирнова</h4>
+                                            <div class="review-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-date">10 декабря 2023</div>
+                                </div>
+                                <div class="review-content">
+                                    <p>Постоянный посетитель уже больше года. Люблю приходить с подругами по выходным. Всегда отличное настроение, приветливый персонал. Особенно нравятся тематические вечера по средам.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="reviewer">
+                                        <div class="reviewer-avatar">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="reviewer-info">
+                                            <h4>Дмитрий Козлов</h4>
+                                            <div class="review-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-date">25 ноября 2023</div>
+                                </div>
+                                <div class="review-content">
+                                    <p>Хорошее место для отдыха с друзьями. Немного дороговато, но качество соответствует цене. Была проблема с микрофоном в нашем зале, но быстро заменили. В целом впечатления положительные.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                
+                <div class="add-review">
+                    <h3>Оставьте свой отзыв</h3>
+                    <form id="review-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="review-name">Ваше имя *</label>
+                                <input type="text" id="review-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-rating">Оценка *</label>
+                                <select id="review-rating" required>
+                                    <option value="">Выберите оценку</option>
+                                    <option value="5">5 - Отлично</option>
+                                    <option value="4">4 - Хорошо</option>
+                                    <option value="3">3 - Удовлетворительно</option>
+                                    <option value="2">2 - Плохо</option>
+                                    <option value="1">1 - Ужасно</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="review-text">Ваш отзыв *</label>
+                            <textarea id="review-text" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить отзыв</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <h2 class="section-title">Контакты</h2>
+                
+                <div class="contacts-container">
+                    <div class="contact-info">
+                        <h3><i class="fas fa-map-marker-alt"></i> Адрес</h3>
+                        <p>г. Москва, ул. Тверская, д. 15</p>
+                        <p>метро "Тверская", 5 минут пешком</p>
+                        
+                        <h3><i class="fas fa-phone"></i> Телефоны</h3>
+                        <p><a href="tel:+74951234567">+7 (495) 123-45-67</a> - бронирование</p>
+                        <p><a href="tel:+74951234568">+7 (495) 123-45-68</a> - администрация</p>
+                        
+                        <h3><i class="far fa-envelope"></i> Email</h3>
+                        <p><a href="mailto:info@melodynight.ru">info@melodynight.ru</a></p>
+                        
+                        <h3><i class="far fa-clock"></i> График работы</h3>
+                        <p>Пн-Чт: 18:00 - 02:00</p>
+                        <p>Пт: 18:00 - 06:00</p>
+                        <p>Сб: 16:00 - 06:00</p>
+                        <p>Вс: 16:00 - 02:00</p>
+                    </div>
+                    
+                    <div class="contact-map">
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?ll=37.610000%2C55.764000&z=16&pt=37.610000%2C55.764000%2Cpm2vml&l=map"
+                            width="100%"
+                            height="400"
+                            frameborder="0"
+                            style="border:0; border-radius: 10px;"
+                            allowfullscreen="true"
+                            aria-hidden="false"
+                            tabindex="0">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">
+                        <i class="fas fa-microphone-alt"></i>
+                        <span>Melody Night</span>
+                    </a>
+                    <p>Лучший караоке-бар Москвы с 2015 года</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#about">О заведении</a></li>
+                        <li><a href="#booking">Бронирование</a></li>
+                        <li><a href="#menu">Меню</a></li>
+                        <li><a href="#events">Мероприятия</a></li>
+                        <li><a href="#songs">Список песен</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    
+                    <div class="footer-app">
+                        <h4>Наше приложение</h4>
+                        <p>Заказывайте песни со смартфона</p>
+                        <div class="app-buttons">
+                            <a href="#" class="app-btn">
+                                <i class="fab fa-apple"></i>
+                                <span>App Store</span>
+                            </a>
+                            <a href="#" class="app-btn">
+                                <i class="fab fa-google-play"></i>
+                                <span>Google Play</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Караоке-бар "Melody Night". Все права защищены.</p>
+                <p><a href="#">Политика конфиденциальности</a> | <a href="#">Пользовательское соглашение</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+                              </html>
